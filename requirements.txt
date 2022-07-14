@@ -1,0 +1,6 @@
+dbt-bigquery
+google-cloud-bigquery==2.18.0
+kaggle
+notebook==6.3.0
+pandas==1.2.4
+pandas-gbq==0.17.5
