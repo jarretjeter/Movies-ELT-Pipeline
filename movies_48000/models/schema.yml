@@ -1,0 +1,36 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: directors
+    description: "A table containing all of the directors in the movies table"
+    columns:
+      - name: Director
+        description: "The director's name"
+        
+      - name: Movie
+        description: "A movie credited to that director"
+        tests:
+          - unique
+          
+      - name: DatePublished
+        description: "The date of the movies release"
+        tests: 

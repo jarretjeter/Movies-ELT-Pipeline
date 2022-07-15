@@ -7,7 +7,7 @@ with Distinct_Directors as (
 )
 
 SELECT * 
-FROM Distinct_Directors;
+FROM Distinct_Directors
 
 -- with Distinct_Directors as (
 
