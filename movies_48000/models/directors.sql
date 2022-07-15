@@ -1,6 +1,11 @@
+{{ config(materialized='table') }}
+
 with Directors as (
 
-    SELECT Director 
+    SELECT 
+        Director, 
+        Name as Movie,
+        DatePublished
     FROM `48000_movies.movies`
 
 )
